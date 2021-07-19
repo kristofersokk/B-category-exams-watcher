@@ -1,0 +1,32 @@
+{
+  "name": "b-category-exams-watcher",
+  "version": "1.0.0",
+  "description": "Notifies when new B-category exam slots are available",
+  "keywords": [],
+  "author": "Kristofer Sokk",
+  "license": "ISC",
+  "scripts": {
+    "start": "tsc -p . && node ./dist/index.js",
+    "lint": "eslint --ext .js,.ts src --color"
+  },
+  "dependencies": {
+    "@types/node": "14.14.31",
+    "@types/nodemailer": "6.4.4",
+    "@typescript-eslint/parser": "4.28.3",
+    "dateformat": "4.5.1",
+    "html-table-to-json": "1.0.0",
+    "nodemailer": "6.6.2",
+    "prettier": "2.2.1",
+    "puppeteer-core": "10.1.0",
+    "typescript": "4.2.3"
+  },
+  "devDependencies": {
+    "@types/dateformat": "3.0.1",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "eslint": "7.21.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.3.1"
+  }
+}

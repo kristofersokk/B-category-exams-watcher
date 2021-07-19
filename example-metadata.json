@@ -1,0 +1,19 @@
+{
+  "chromePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+  "cacheFile": "cachedSlots.json",
+  "serviceGmailAuth": {
+    "user": "exam-example@gmail.com",
+    "pass": "********"
+  },
+  "debugEmail": "john@example.com",
+  "clients": {
+    "mike@example.com": {
+      "filter": {
+        "cities": [
+          "Tallinn",
+          "Tartu"
+        ]
+      }
+    }
+  }
+}

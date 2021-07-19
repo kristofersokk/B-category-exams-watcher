@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    // "import/extensions": [
+    //   "error",
+    //   "ignorePackages",
+    //   {
+    //     "js": "never",
+    //     "ts": "never"
+    //   }
+    // ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "import/no-named-as-default": "off",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": [
+      "warn",
+      {
+        "allowDirectConstAssertionInArrowFunctions": true
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state"]
+      }
+    ],
+    "no-underscore-dangle": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  }
+}

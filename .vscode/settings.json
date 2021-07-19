@@ -1,0 +1,37 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "files.eol": "\n",
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.packageManager": "npm",
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.format.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  }
+}
